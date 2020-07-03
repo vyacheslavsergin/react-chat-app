@@ -1,0 +1,7 @@
+# OS-level helper files (cache, folder preferences)
+.idea
+# any/folder/.idea
+
+# slash at the end means a folder
+node_modules/
+# folder "build", NOT file "build"

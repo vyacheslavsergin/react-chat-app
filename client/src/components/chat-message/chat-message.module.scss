@@ -1,0 +1,36 @@
+.message {
+  $this: &;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.owner {
+    justify-content: flex-start;
+
+    #{$this}__name-container {
+      text-align: left;
+    }
+  }
+
+  &__name-container {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__text-container {
+    max-width: 60%;
+    padding: 20px;
+    display: inline-flex;
+  }
+
+  &__text {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}

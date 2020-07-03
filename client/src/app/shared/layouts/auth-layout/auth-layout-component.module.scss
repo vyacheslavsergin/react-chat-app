@@ -1,0 +1,22 @@
+@import '../../../../ui/utils/styles/media.config.scss';
+
+.main {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 368px;
+  min-width: auto;
+  min-height: 100%;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 608px;
+  }
+
+  @include desktop {
+    max-width: 928px;
+  }
+}

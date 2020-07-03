@@ -1,0 +1,114 @@
+$lg-columns: 29;
+$md-columns: 19;
+$sm-columns: 23;
+$lg-column-width: 32px;
+$md-column-width: 32px;
+$sm-column-width: 16px;
+$menu-opened-width: 320px;
+$menu-closed-width: 64px;
+
+$lg-width: calc(29 * 32px);
+$md-width: calc(19 * 32px);
+$sm-width: calc(23 * 16px);
+
+//$sm-offset-width-negative: calc(calc(23 * 16px) / 2 - 50vw);
+
+$sm-offset-width-negative: calc(23 * 16px / 2 - 50vw)
+
+
+/* :root {
+  --lg-columns: 29;
+  --md-columns: 19;
+  --sm-columns: 23;
+  --lg-column-width: 32px;
+  --md-column-width: 32px;
+  --sm-column-width: 16px;
+  --menu-opened-width: 320px;
+  --menu-closed-width: 64px;
+  --lg-width: calc(var(--lg-columns) * var(--lg-column-width));
+  --md-width: calc(var(--md-columns) * var(--md-column-width));
+  --sm-width: calc(var(--sm-columns) * var(--sm-column-width));
+}
+ */
+/* Актуальные точки смены режимов */
+/* @custom-media --media-lg (min-width: 1056px);
+@custom-media --media-md (min-width: 732px) and (max-width: 1055.98px);
+@custom-media --media-sm (max-width: 731.98px); */
+
+/* Для совместимости с первой версией гридов 3.0 */
+/* @custom-media --media-xl-compatible (min-width: 1281px);
+@custom-media --media-lg-compatible (min-width: 1101px) and (max-width: 1280px);
+@custom-media --media-md-compatible (min-width: 701px) and (max-width: 1100px);
+@custom-media --media-sm-compatible (min-width: 375px) and (max-width: 700px);
+@custom-media --media-xs-compatible (max-width: 374px); */
+
+/* deprecated: same as lg, md, sm */
+/* @custom-media --media-desktop (min-width: 1056px);
+@custom-media --media-tablet (min-width: 732px) and (max-width: 1055px);
+@custom-media --media-phone (max-width: 731px); */
+
+/* deprecated */
+/* @custom-media --media-mobile (max-width: 767px);
+@custom-media --media-web (min-width: 768px) and (max-width: 1599px);
+@custom-media --media-xl (min-width: 1600px); */
+
+/* @import '../utils/styles/media.config.css';
+
+:root {
+  --lg-full-offset-width: calc(50vw - (var(--menu-opened-width) + var(--lg-width)) / 2);
+  --lg-short-offset-width: calc(50vw - (var(--menu-closed-width) + var(--lg-width)) / 2);
+  --md-short-offset-width: calc(50vw - (var(--menu-closed-width) + var(--md-width)) / 2);
+  --sm-offset-width: calc(50vw - var(--sm-width) / 2);
+  --lg-full-offset-width-negative: calc((var(--menu-opened-width) + var(--lg-width)) / 2 - 50vw);
+  --lg-short-offset-width-negative: calc((var(--menu-closed-width) + var(--lg-width)) / 2 - 50vw);
+  --md-short-offset-width-negative: calc((var(--menu-closed-width) + var(--md-width)) / 2 - 50vw);
+  --sm-offset-width-negative: calc(var(--sm-width) / 2 - 50vw);
+}
+
+@media (min-width: 1312px) {
+  .outer {
+    margin-left: var(--lg-full-offset-width-negative);
+    margin-right: var(--lg-full-offset-width-negative);
+  }
+
+  .inner {
+    padding-left: var(--lg-full-offset-width);
+    padding-right: var(--lg-full-offset-width);
+  }
+}
+
+@media (--media-lg) and (max-width: 1311px) {
+  .outer {
+    margin-left: var(--lg-short-offset-width-negative);
+    margin-right: var(--lg-short-offset-width-negative);
+  }
+
+  .inner {
+    padding-left: var(--lg-short-offset-width);
+    padding-right: var(--lg-short-offset-width);
+  }
+}
+
+@media (--media-md) {
+  .outer {
+    margin-left: var(--md-short-offset-width-negative);
+    margin-right: var(--md-short-offset-width-negative);
+  }
+
+  .inner {
+    padding-left: var(--md-short-offset-width);
+    padding-right: var(--md-short-offset-width);
+  }
+}
+
+@media (--media-sm) {
+  .outer {
+    margin-left: var(--sm-offset-width-negative);
+    margin-right: var(--sm-offset-width-negative);
+  }
+
+  .inner {
+    padding-left: var(--sm-offset-width);
+    padding-right: var(--sm-offset-width);
+  }
+} */

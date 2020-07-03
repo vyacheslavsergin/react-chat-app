@@ -1,0 +1,26 @@
+@import '../../ui/utils/styles/colors.config';
+@import '../../ui/utils/styles/offsets.config';
+
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #515b68;
+}
+
+.container {
+  padding: 10px 0;
+}
+
+.user {
+  padding: $offset-sm $offset-md;
+  color: $white;
+  font-weight: 600;
+
+  &.is-active {
+    font-weight: 700;
+  }
+}
