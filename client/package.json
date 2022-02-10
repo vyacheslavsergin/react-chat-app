@@ -9,7 +9,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "materialize-css": "^1.0.0-rc.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.12.1",
